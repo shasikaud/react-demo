@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { Box, Stack, height } from '@mui/system';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 import './App.css';
+import { useState, useEffect } from 'react';
+import Container1 from './components/Container1';
+import Container2 from './components/Container2';
+import Container3 from './components/Container3';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Box display='flex'>
+      {/* <Container1/> */}
+      {/* <Container2/> */}
+      <Container3/>
+      {/* <Container3/> */}
+    </Box>
+  )
+
+  
 }
 
 export default App;
